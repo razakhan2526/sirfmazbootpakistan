@@ -1,0 +1,32 @@
+@use '../abstracts/variables' as *;
+
+ul{
+    padding: 0px;
+    li{
+        display: flex;
+        align-items: center;
+        margin-bottom: 0.8rem;
+        i{
+            font-size: 18px;
+            background-color: $white;
+            color: $primary;
+            width: 40px;
+            height: 38px;
+            border-radius: 50%;
+            display: flex !important;
+            align-items: center;
+            justify-content: center;
+            box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+        }
+        &:hover{
+            i{
+                background-color: $primary;
+                color: $white;
+                transition: $trasition-600s;
+            }   
+        }
+        a{
+            text-decoration: none;
+        }
+    }
+}

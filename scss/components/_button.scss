@@ -1,0 +1,38 @@
+@use '../abstracts/variables' as *;
+
+.btn-primary{
+    background-color: $primary;
+    color: $white;
+    padding: 10px 25px;
+    border: 1px solid transparent;
+    font-size: 1rem;
+    letter-spacing: 0.3px;
+    font-weight: 500;
+    border-radius: 50px;
+    &:focus{
+        box-shadow: none;
+    }
+    &:hover{
+        background-color: $black;
+        transition: $trasition-400s;
+    }
+}
+
+.btn-light{
+    background-color: $primary;
+    color: $white;
+    padding: 10px 25px;
+    border: 1px solid transparent;
+    font-size: 1rem;
+    letter-spacing: 0.3px;
+    font-weight: 500;
+    border-radius: 50px;
+    text-transform: capitalize;
+    &:focus{
+        box-shadow: none;
+    }
+    &:hover{
+        background-color: $white;
+        transition: $trasition-400s;
+    }
+}

@@ -1,0 +1,13 @@
+@use "../node_modules/bootstrap/scss/bootstrap.scss";
+
+//Abstracts
+@use "abstracts/_abstracts-dir";
+
+//Components
+@use "components/_components-dir";
+
+//Layout
+@use "layouts/_layouts-dir";
+
+//Pages
+@use "pages/_pages-dir";

@@ -1,0 +1,243 @@
+@use "../abstracts/variables" as *;
+
+@media (max-width: 1199.98px){
+    // NAVBAR START
+    .transparent-menu {
+        .navbar-collapse{
+            .navbar-nav{
+                li{
+                    margin-left: 0.5rem;
+                    a{
+                        font-size: 0.9rem;
+                    }
+                }
+            }
+        }
+    }
+    .window-scroll .navbar-nav li a::after {
+        background-color: transparent !important;
+    }
+    // NAVBAR END
+
+    // SLIDER START
+    .hero-section{
+        .carousel{
+            .carousel-item{
+                img{
+                    object-fit: cover;
+                    height: 100vh;
+                }
+                .carousel-caption{
+                    h3 {
+                        font-size: 3rem;
+                    } 
+                    h2 {
+                        font-size: 2.5rem;
+                    }
+                    p {
+                        font-size: 1rem;
+                        width: 65%;
+                    }
+                }  
+            }   
+        }
+    } 
+    // SLIDER END
+
+    // SERVICES SECTION START
+    .services-sec{
+        padding: 3rem 0 4rem;
+        #carouselservices{
+            .right-col {
+                left: 10px;
+            }
+        } 
+    } 
+    // SERVICES SECTION END
+
+    // CONTACT SEC
+    .contact-sec {
+        padding: 0rem 0rem 0;
+    }
+    // CONTACT SEC
+
+    // ABOUT US SEC
+    .about-sec{
+        padding: 3rem 0 0;
+        .info{
+            margin-top: 0.5rem;
+            p {
+                letter-spacing: 0.2px;
+                width: 100%;
+                font-size: 0.9rem;
+            }
+        } 
+    } 
+    // ABOUT US SEC
+}
+
+@media (max-width: 991.98px){
+    // NAVBAR START
+    .transparent-menu {
+        background: $primary;
+        padding: 5px 0px;
+        .logo{
+            width: 70px;
+        }
+        #open-subscribe-form{
+            background-color: $white;
+            color: $black;
+            position: relative;
+            top: 0px;
+            margin-left: auto;
+            margin-right: 1rem;
+            padding: 10px 15px;
+            font-size: 0.9rem;
+            display: block;
+        }
+        .navbar-toggler{
+            padding: 7px;
+            border: 1px solid $white;
+            color: $white;
+            background: $white;
+            border-radius: 0px;
+            &:focus{
+                box-shadow: none;
+            }
+        }
+        .navbar-collapse{
+            .navbar-nav{
+                li {
+                margin-left: 0.5rem;
+                margin-bottom: 5px;
+                .active {
+                    color: $black;
+                }
+                a{
+                    &:hover{
+                        color: $black;
+                    }
+                }
+            }
+        }
+        .btn-light{
+            display: none !important;
+        }
+        }
+    }
+    // NAVBAR END
+
+    // SLIDER START
+    .hero-section{
+        .carousel{
+            .carousel-item{
+                img{
+                    object-fit: cover;
+                    height: 100vh;
+                }
+                .carousel-caption{
+                    h3 {
+                        font-size: 3rem;
+                    } 
+                    h2 {
+                        font-size: 2.5rem;
+                    }
+                    p {
+                        font-size: 1rem;
+                        width: 65%;
+                    }
+                }  
+            }   
+        }
+    } 
+    // SLIDER END
+
+    // SERVICES SECTION START
+    .services-sec{
+        #carouselservices{
+            .right-col {
+                left: 10px;
+            }
+        } 
+    } 
+    // SERVICES SECTION END
+
+    // ABOUT US SEC
+    .about-sec{
+        .info{
+            margin-top: 0.5rem;
+            p {
+                letter-spacing: 0.2px;
+                width: 100%;
+                font-size: 0.9rem;
+            }
+        } 
+    } 
+    // ABOUT US SEC
+}
+@media (max-width: 767.98px){
+    // NAVBAR START
+    .transparent-menu {
+         .logo{
+            width: 60px;
+        }
+        .navbar-collapse{
+            .navbar-nav{
+                li {
+                    margin-left: 0.5rem;
+                    .active {
+                        color: $black;
+                    }
+                }
+            } 
+        }
+    }
+    // NAVBAR END
+
+    // SLIDER START
+    .hero-section{
+        .carousel{
+            .carousel-item{
+                height: 100vh;
+                img{
+                    object-fit: cover;
+                    height: 100vh;
+                }
+                .carousel-caption{
+                    height: 100vh;
+                    h3 {
+                        font-size: 2.5rem;
+                    } 
+                    h2 {
+                        font-size: 2rem;
+                    }
+                    p {
+                        font-size: 1rem;
+                        width: 95%;
+                    }
+                }  
+            }   
+        }
+    } 
+    // SLIDER END
+
+    // SERVICES SECTION START
+    .services-sec{
+        padding: 2rem 0 2rem;
+        #carouselservices{
+            .right-col {
+                left: 10px;
+            }
+        } 
+    } 
+    // SERVICES SECTION END
+
+    // ABOUTUS START
+    .about-sec {
+        padding: 2rem 0 0;
+        .right-img{
+            margin-top: 2rem;
+        }
+    }
+    // ABOUTUS END
+}

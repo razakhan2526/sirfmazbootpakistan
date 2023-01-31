@@ -1,0 +1,101 @@
+@use "../abstracts/variables" as *;
+
+.transparent-menu{
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 5px 0px;
+    #open-subscribe-form{
+        display: none;
+    }
+    .logo{
+        width: 75px;
+        height: auto;
+        object-fit: contain;
+    }  
+    .navbar-collapse{
+        .navbar-nav{
+            li{
+                margin-left: 1rem;
+                position: relative;
+                a{
+                    font-size: 16px;
+                    font-weight: 500;
+                    letter-spacing: 0.4px;
+                    color: $white;
+                    &::after{
+                        content: '';
+                        position: absolute;
+                        width: 100%;
+                        transform: scale(0);
+                        height: 2px;
+                        bottom: 0;
+                        left: 0;
+                        background-color: $primary;
+                        transform-origin: bottom right;
+                        transition: transform 0.25s ease-out;
+                    }
+                    &:hover{
+                        color: $primary;
+                        transition: ease 0.25s all;
+                        &::after{
+                            transform: scaleX(1);
+                            transform-origin: bottom left;
+                        }
+                    }
+                }
+                
+                .active{
+                    color: $primary;
+                    font-weight: 700;
+                    border-bottom: 2px solid $primary;
+                }
+            }
+        } 
+        .btn-light{
+            margin-left: 1rem;
+            position: relative;
+            top: -5px;
+            display: block !important;
+        }
+    }
+}
+
+// WINDOW SCROLL
+.window-scroll{
+    background-color: $primary;
+    transition: $trasition-600s;   
+    .navbar-nav{
+        li{
+            a{
+                color: $white;
+                &::after{
+                    background-color: $black !important;
+                }
+                &:hover{
+                    color: $black !important;
+                    &::after{
+                        transform: scaleX(1);
+                        transform-origin: bottom left;
+                    }
+                }
+            }
+            
+            .active{
+                color: $black !important;
+                border-bottom: 2px solid $black !important;
+                &::after{
+                    background-color: $black
+                }
+                &:hover{
+                    color: $black;
+                }
+            }
+        }
+    } 
+    .btn-light{
+        background-color: $white;
+        color: $black;
+    }
+}

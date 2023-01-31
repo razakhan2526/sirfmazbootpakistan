@@ -1,0 +1,41 @@
+@use "../abstracts/variables" as *;
+
+@mixin slider-gradient{
+    background: rgb(0,161,97);
+    background: linear-gradient(0deg, rgba(0,161,97,0.5637605383950455) 0%, rgba(0,0,0,0.5973739837731968) 100%);
+}
+
+@mixin about-img{
+    background: rgb(0,161,97);
+    background: linear-gradient(0deg, rgba(0,161,97,0.5637605383950455) 0%, rgba(0,0,0,0.5973739837731968) 100%);
+}
+
+@mixin devider{
+    .border-underline{
+        display: flex;
+        gap: 0.7rem;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        top: -10px;
+        span{
+            border-bottom: 4px solid $black;
+            width: 80px;
+        }
+    }
+}
+
+@mixin devider-white{
+    .underline-white{
+        display: flex;
+        gap: 0.7rem;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        top: -10px;
+        span{
+            border-bottom: 4px solid $white;
+            width: 80px;
+        }
+    }
+}
