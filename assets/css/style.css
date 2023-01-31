@@ -11234,7 +11234,7 @@ footer .copyrights {
   transition: ease 600ms all;
 }
 .services-sec #carouselservices .carousel-indicators {
-  bottom: -50px;
+  bottom: -70px;
 }
 .services-sec #carouselservices .carousel-indicators .active {
   background-color: #00a161;
@@ -11417,11 +11417,11 @@ footer .copyrights {
   background: linear-gradient(0deg, rgba(0, 161, 97, 0.5637605384) 0%, rgba(0, 0, 0, 0.5973739838) 100%);
 }
 .about-sec .info {
-  margin-top: 1.5rem;
+  margin-top: 1rem;
 }
 .about-sec .info p {
   color: #495057;
-  line-height: 1.8;
+  line-height: 28px;
   letter-spacing: 0.4px;
   width: 95%;
 }
