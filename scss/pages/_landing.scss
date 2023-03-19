@@ -8,6 +8,9 @@
         .carousel-item{
             position: relative;
             height: 100vh;
+            img{
+                height: 100vh;
+            }
             .carousel-caption {
                 position: absolute;
                 right: 0%;
@@ -52,8 +55,8 @@
             opacity: 1;
             span{
                 background: $primary;
-                width: 50px;
-                height: 50px;
+                width: 45px;
+                height: 45px;
                 color: $white;
                 font-size: 18px;
                 display: flex;
@@ -81,7 +84,7 @@
 // SERVICES SECTION START
 .services-sec{
     @include devider;
-    padding: 4rem 0 4rem;
+    padding: 4rem 0 5rem;
     h2{
         text-align: center;
         font-weight: 700;
@@ -89,8 +92,13 @@
     #carouselservices{
         padding-top: 30px;
         .left-col{
+            margin-top: 75px;
+            // display: flex;
+            // align-items: flex-end;
             img{
                 width: 100%;
+                height: 550px;
+                object-fit: cover;
             }
         }
         .right-col{
@@ -108,6 +116,12 @@
                 align-items: center;
                 justify-content: center;
                 margin-bottom: 15px;
+                padding: 5px;
+                img{
+                    width: 36px;
+                    height: 36px;
+                    object-fit: contain;
+                }
             }
             h3{
                 font-weight: 700;
@@ -121,16 +135,9 @@
                 letter-spacing: 0.4px;
                 width: 95%;
             }
-            &:hover{
-                .fa-icon{
-                    background-color: $primary;
-                    color: $white;
-                    transition: $trasition-600s;
-                }
-            }
         }
         .carousel-indicators{
-            bottom: -70px;
+            bottom: -80px;
             .active{
                 background-color: $primary;
             }
@@ -145,6 +152,64 @@
     }
 }
 // SERVICES SECTION END
+
+// TEAM SECTION START
+.team-sec{
+    @include devider;
+    padding: 2.5rem 0 2rem;
+    h2{
+        text-align: center;
+        font-weight: 700;
+    }
+    .team-card{
+        position: relative;
+        margin-top: 2rem;
+        img{
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .overlay{
+            position: absolute;
+            opacity: 0;
+            background: rgb(0 161 97 / 60%);
+            // background: rgba(0, 0, 0, 0.5);
+            transition: 0.7s;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            bottom: 0;
+            left: 0;
+            padding: 1.50rem 0;
+            border-radius: 10px;
+            h2{
+                text-align: center;
+                color: $white;
+                font-size: 1.50rem;
+                font-weight: 700;
+                border-bottom: 2px solid $white;
+                margin: 10px 15px;
+            }
+            p{
+                text-align: center;
+                color: $white;
+                font-size: 1rem;
+                font-weight: 600;
+            }
+        }
+        &:hover{
+            .overlay{
+                opacity: 1;
+            }
+        }
+    }  
+
+}
+// TEAM SECTION END
 
 // MEMBERSHIP
 .member-section{
@@ -202,7 +267,7 @@
 
 // CONTACT US
 .contact-sec{
-    padding: 0rem 10rem 0;
+    padding: 2rem 10rem 0;
     @include devider;
     h2{
         text-align: center;
@@ -252,7 +317,7 @@
 
 // ABOUT US SECTION
 .about-sec{
-    padding: 5rem 0 0;
+    padding: 4rem 0 0;
     @include devider;
     h2{
         font-weight: 700;
@@ -272,6 +337,7 @@
     .right-img{
     position: relative;
     padding: 0px;
+    margin-top: 70px;
         .overlay{
             position: absolute;
             right: 0%;
@@ -299,7 +365,8 @@
 // PACKAGES PLANS SECTION
 .plan-sec{
     @include devider;
-    padding: 1.25rem 0 4rem;
+    padding: 3.5rem 0 4rem;
+    background-color: $gray-200;
     h2{
         text-align: center;
         font-weight: 700;
@@ -307,6 +374,7 @@
     }
     .package-card{
         padding: 0rem 0rem 6rem 0rem;
+        background-color: $white;
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
         border-radius: 20px;
         text-align: center;

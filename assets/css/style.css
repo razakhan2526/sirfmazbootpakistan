@@ -10806,6 +10806,10 @@ p {
   margin-bottom: 0px;
 }
 
+a {
+  text-decoration: none;
+}
+
 .ml16 {
   text-transform: uppercase;
   letter-spacing: 0.5em;
@@ -10854,9 +10858,9 @@ p {
 .btn-light {
   background-color: #00a161;
   color: #fff;
-  padding: 10px 25px;
+  padding: 8px 15px;
   border: 1px solid transparent;
-  font-size: 1rem;
+  font-size: 15px;
   letter-spacing: 0.3px;
   font-weight: 500;
   border-radius: 50px;
@@ -10942,17 +10946,18 @@ ul li a {
   display: flex;
   align-items: center;
 }
-.subscribe-form form h3 {
+
+.get-quote form h3 {
   text-align: center;
   font-size: 1.5rem;
   font-weight: 500;
   margin-bottom: 1.9rem;
   color: #000;
 }
-.subscribe-form form .input-field {
+.get-quote form .input-field {
   margin-bottom: 1.25rem;
 }
-.subscribe-form form .input-field input {
+.get-quote form .input-field input {
   background-color: #fff;
   border-radius: 5px;
   font-size: 0.9rem;
@@ -10963,13 +10968,35 @@ ul li a {
   box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
   height: 50px;
 }
-.subscribe-form form .input-field input:focus {
+.get-quote form .input-field input:focus {
   border: 1px solid #00a161;
   box-shadow: none;
 }
-.subscribe-form form .submit-btn {
+.get-quote form .submit-btn {
   text-align: center;
   margin-top: 0.8rem;
+}
+.get-quote .modal-body {
+  overflow-y: auto;
+  padding: 30px;
+  overflow-x: hidden;
+}
+.get-quote .btn-close {
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 15px;
+  color: #fff;
+  background-color: #00a161;
+  border: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  line-height: 26px;
+  cursor: pointer;
+  z-index: 10;
+  opacity: 1;
+  background-image: none;
 }
 
 .transparent-menu {
@@ -10992,7 +11019,7 @@ ul li a {
   position: relative;
 }
 .transparent-menu .navbar-collapse .navbar-nav li a {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 500;
   letter-spacing: 0.4px;
   color: #fff;
@@ -11027,6 +11054,9 @@ ul li a {
   position: relative;
   top: -5px;
   display: block !important;
+}
+.transparent-menu .member-btn {
+  display: none;
 }
 
 .window-scroll {
@@ -11064,7 +11094,7 @@ ul li a {
 footer {
   background-color: #00a161;
   padding: 3rem 0 0;
-  margin-top: 5rem;
+  margin-top: 3rem;
 }
 footer .social-list {
   display: flex;
@@ -11106,6 +11136,9 @@ footer .copyrights {
 }
 .hero-section .carousel .carousel-item {
   position: relative;
+  height: 100vh;
+}
+.hero-section .carousel .carousel-item img {
   height: 100vh;
 }
 .hero-section .carousel .carousel-item .carousel-caption {
@@ -11153,8 +11186,8 @@ footer .copyrights {
 }
 .hero-section .carousel .carousel-control-prev span, .hero-section .carousel .carousel-control-next span {
   background: #00a161;
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
   color: #fff;
   font-size: 18px;
   display: flex;
@@ -11175,7 +11208,7 @@ footer .copyrights {
 }
 
 .services-sec {
-  padding: 4rem 0 4rem;
+  padding: 4rem 0 5rem;
 }
 .services-sec .border-underline {
   display: flex;
@@ -11196,8 +11229,13 @@ footer .copyrights {
 .services-sec #carouselservices {
   padding-top: 30px;
 }
+.services-sec #carouselservices .left-col {
+  margin-top: 75px;
+}
 .services-sec #carouselservices .left-col img {
   width: 100%;
+  height: 550px;
+  object-fit: cover;
 }
 .services-sec #carouselservices .right-col {
   position: relative;
@@ -11215,6 +11253,12 @@ footer .copyrights {
   align-items: center;
   justify-content: center;
   margin-bottom: 15px;
+  padding: 5px;
+}
+.services-sec #carouselservices .right-col .fa-icon img {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
 }
 .services-sec #carouselservices .right-col h3 {
   font-weight: 700;
@@ -11228,13 +11272,8 @@ footer .copyrights {
   letter-spacing: 0.4px;
   width: 95%;
 }
-.services-sec #carouselservices .right-col:hover .fa-icon {
-  background-color: #00a161;
-  color: #fff;
-  transition: ease 600ms all;
-}
 .services-sec #carouselservices .carousel-indicators {
-  bottom: -70px;
+  bottom: -80px;
 }
 .services-sec #carouselservices .carousel-indicators .active {
   background-color: #00a161;
@@ -11244,6 +11283,69 @@ footer .copyrights {
   width: 15px;
   height: 15px;
   border-radius: 50%;
+  opacity: 1;
+}
+
+.team-sec {
+  padding: 2.5rem 0 2rem;
+}
+.team-sec .border-underline {
+  display: flex;
+  gap: 0.7rem;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: -10px;
+}
+.team-sec .border-underline span {
+  border-bottom: 4px solid #000;
+  width: 80px;
+}
+.team-sec h2 {
+  text-align: center;
+  font-weight: 700;
+}
+.team-sec .team-card {
+  position: relative;
+  margin-top: 2rem;
+}
+.team-sec .team-card img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.team-sec .team-card .overlay {
+  position: absolute;
+  opacity: 0;
+  background: rgba(0, 161, 97, 0.6);
+  transition: 0.7s;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  left: 0;
+  padding: 1.5rem 0;
+  border-radius: 10px;
+}
+.team-sec .team-card .overlay h2 {
+  text-align: center;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  border-bottom: 2px solid #fff;
+  margin: 10px 15px;
+}
+.team-sec .team-card .overlay p {
+  text-align: center;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.team-sec .team-card:hover .overlay {
   opacity: 1;
 }
 
@@ -11312,7 +11414,7 @@ footer .copyrights {
 }
 
 .contact-sec {
-  padding: 0rem 10rem 0;
+  padding: 2rem 10rem 0;
 }
 .contact-sec .border-underline {
   display: flex;
@@ -11372,7 +11474,7 @@ footer .copyrights {
 }
 
 .about-sec {
-  padding: 5rem 0 0;
+  padding: 4rem 0 0;
 }
 .about-sec .border-underline {
   display: flex;
@@ -11404,6 +11506,7 @@ footer .copyrights {
 .about-sec .right-img {
   position: relative;
   padding: 0px;
+  margin-top: 70px;
 }
 .about-sec .right-img .overlay {
   position: absolute;
@@ -11427,7 +11530,8 @@ footer .copyrights {
 }
 
 .plan-sec {
-  padding: 1.25rem 0 4rem;
+  padding: 3.5rem 0 4rem;
+  background-color: #e9ecef;
 }
 .plan-sec .border-underline {
   display: flex;
@@ -11448,6 +11552,7 @@ footer .copyrights {
 }
 .plan-sec .package-card {
   padding: 0rem 0rem 6rem 0rem;
+  background-color: #fff;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 20px;
   text-align: center;
@@ -11507,6 +11612,124 @@ footer .copyrights {
   margin-top: 1.5rem;
 }
 
+.survey-form {
+  padding-top: 2rem;
+  max-width: 1140px;
+  margin: auto;
+}
+
+.survey-form .logo {
+  width: 120px;
+  height: auto;
+  object-fit: contain;
+  margin: auto;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.survey-form h1 {
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.survey-form label {
+  color: #000;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  text-decoration: none;
+}
+
+.survey-form .form-control {
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid #000;
+  background-color: transparent;
+  margin-bottom: 50px;
+  border-radius: 0px;
+}
+
+.survey-form .form-control:focus {
+  border: 0px;
+  outline: none;
+  box-shadow: none;
+  border-bottom: 1px solid #00a161;
+}
+
+.survey-form p {
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  color: #000;
+  margin-top: 30px;
+}
+
+.survey-form .form-check .form-check-label a {
+  font-size: 16px;
+  font-weight: 700;
+  color: #00a161;
+}
+
+.survey-form .form-check input {
+  border-radius: 0px;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #000;
+  color: #00a161;
+}
+
+.form-check-input:checked {
+  background-color: #00a161;
+}
+
+.survey-form .form-check input:focus {
+  box-shadow: none;
+}
+
+.survey-form .btn-primary {
+  background-color: #00a161;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  border-radius: 50px;
+  width: 120px;
+  height: 45px;
+  border: 0px;
+  margin: auto;
+  display: block;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+.survey-form .btn-primary:hover {
+  background-color: #000;
+  transition: 0.3s;
+}
+
+.survey-form .contact-info {
+  padding-top: 50px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.survey-form .web-info {
+  text-align: right;
+}
+
+.survey-form .contact-info a {
+  color: #00a161;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  text-decoration: none;
+}
+
 @media (max-width: 1199.98px) {
   .transparent-menu .navbar-collapse .navbar-nav li {
     margin-left: 0.5rem;
@@ -11536,9 +11759,13 @@ footer .copyrights {
   }
   .services-sec #carouselservices .right-col {
     left: 10px;
+    top: 30px;
+  }
+  .services-sec #carouselservices .left-col {
+    margin-top: 0px;
   }
   .contact-sec {
-    padding: 0rem 0rem 0;
+    padding: 2rem 0rem 0;
   }
   .about-sec {
     padding: 3rem 0 0;
@@ -11550,6 +11777,32 @@ footer .copyrights {
     letter-spacing: 0.2px;
     width: 100%;
     font-size: 0.9rem;
+  }
+  .plan-sec {
+    padding: 2.25rem 0 4rem;
+  }
+  .plan-sec h2 {
+    font-size: 1.9rem;
+  }
+  .plan-sec .package-card h2 {
+    font-size: 1.2rem;
+  }
+  .plan-sec .package-card ul li h4 {
+    font-size: 1rem;
+  }
+  .survey-form {
+    padding-top: 8rem;
+  }
+  .survey-form p {
+    margin-left: 0px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+  .survey-form .web-info {
+    text-align: left;
+  }
+  .survey-form .contact-info {
+    padding-top: 10px;
   }
 }
 @media (max-width: 991.98px) {
@@ -11567,7 +11820,7 @@ footer .copyrights {
     top: 0px;
     margin-left: auto;
     margin-right: 1rem;
-    padding: 10px 15px;
+    padding: 10px 15px 8px 15px;
     font-size: 0.9rem;
     display: block;
   }
@@ -11594,8 +11847,17 @@ footer .copyrights {
   .transparent-menu .navbar-collapse .btn-light {
     display: none !important;
   }
+  .transparent-menu .member-btn {
+    margin-left: auto;
+    margin-right: 20px;
+    background-color: #fff;
+    color: #000;
+  }
+  .transparent-menu .member-btn {
+    display: block;
+  }
   .hero-section .carousel .carousel-item img {
-    object-fit: cover;
+    object-fit: fill;
     height: 100vh;
   }
   .hero-section .carousel .carousel-item .carousel-caption h3 {
@@ -11610,6 +11872,8 @@ footer .copyrights {
   }
   .services-sec #carouselservices .right-col {
     left: 10px;
+    top: 40px;
+    padding-bottom: 50px;
   }
   .about-sec .info {
     margin-top: 0.5rem;
@@ -11619,8 +11883,34 @@ footer .copyrights {
     width: 100%;
     font-size: 0.9rem;
   }
+  .plan-sec {
+    padding: 2.25rem 0 4rem;
+  }
+  .plan-sec h2 {
+    font-size: 1.9rem;
+  }
+  .plan-sec .package-card h2 {
+    font-size: 1.2rem;
+  }
+  .plan-sec .package-card ul li h4 {
+    font-size: 1rem;
+  }
+  .get-quote form h3 {
+    font-size: 1.2rem;
+  }
+  .get-quote form h3 .input-field label {
+    font-size: 15px;
+  }
+  .get-quote form label {
+    font-size: 14px;
+  }
 }
 @media (max-width: 767.98px) {
+  .container-md,
+  .container-sm,
+  .container {
+    max-width: 850px;
+  }
   .transparent-menu .logo {
     width: 60px;
   }
@@ -11631,36 +11921,71 @@ footer .copyrights {
     color: #000;
   }
   .hero-section .carousel .carousel-item {
-    height: 100vh;
+    height: 80vh;
   }
   .hero-section .carousel .carousel-item img {
     object-fit: cover;
-    height: 100vh;
+    height: 80vh;
   }
   .hero-section .carousel .carousel-item .carousel-caption {
-    height: 100vh;
+    height: 80vh;
   }
   .hero-section .carousel .carousel-item .carousel-caption h3 {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
+    width: 80%;
   }
   .hero-section .carousel .carousel-item .carousel-caption h2 {
-    font-size: 2rem;
+    font-size: 1.9rem;
   }
   .hero-section .carousel .carousel-item .carousel-caption p {
     font-size: 1rem;
     width: 95%;
   }
   .services-sec {
-    padding: 2rem 0 2rem;
+    padding: 2rem 0 4.5rem;
+  }
+  .services-sec h2 {
+    font-size: 2rem;
+  }
+  .services-sec .border-underline span {
+    width: 70px;
   }
   .services-sec #carouselservices .right-col {
     left: 10px;
+    top: 40px;
+  }
+  .services-sec #carouselservices .left-col img {
+    height: auto;
   }
   .about-sec {
     padding: 2rem 0 0;
   }
   .about-sec .right-img {
     margin-top: 2rem;
+  }
+  .about-sec h2 {
+    font-size: 2rem;
+  }
+  .about-sec .border-underline span {
+    width: 55px;
+  }
+  .plan-sec {
+    padding: 2.25rem 0 4rem;
+  }
+  .plan-sec h2 {
+    font-size: 2rem;
+  }
+  .plan-sec .package-card h2 {
+    font-size: 1.55rem;
+  }
+  .team-sec h2 {
+    font-size: 2rem;
+  }
+  .team-sec .border-underline span {
+    width: 70px;
+  }
+  .contact-sec h2 {
+    font-size: 2rem;
   }
 }
 

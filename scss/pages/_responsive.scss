@@ -1,243 +1,460 @@
 @use "../abstracts/variables" as *;
 
-@media (max-width: 1199.98px){
+@media (max-width: 1199.98px) {
+
     // NAVBAR START
     .transparent-menu {
-        .navbar-collapse{
-            .navbar-nav{
-                li{
+        .navbar-collapse {
+            .navbar-nav {
+                li {
                     margin-left: 0.5rem;
-                    a{
+
+                    a {
                         font-size: 0.9rem;
                     }
                 }
             }
         }
     }
+
     .window-scroll .navbar-nav li a::after {
         background-color: transparent !important;
     }
+
     // NAVBAR END
 
     // SLIDER START
-    .hero-section{
-        .carousel{
-            .carousel-item{
-                img{
+    .hero-section {
+        .carousel {
+            .carousel-item {
+                img {
                     object-fit: cover;
                     height: 100vh;
                 }
-                .carousel-caption{
+
+                .carousel-caption {
                     h3 {
                         font-size: 3rem;
-                    } 
+                    }
+
                     h2 {
                         font-size: 2.5rem;
                     }
+
                     p {
                         font-size: 1rem;
                         width: 65%;
                     }
-                }  
-            }   
+                }
+            }
         }
-    } 
+    }
+
     // SLIDER END
 
     // SERVICES SECTION START
-    .services-sec{
+    .services-sec {
         padding: 3rem 0 4rem;
-        #carouselservices{
+
+        #carouselservices {
             .right-col {
                 left: 10px;
+                top: 30px;
             }
-        } 
-    } 
+            .left-col{
+                margin-top: 0px;
+            }
+        }
+    }
+
     // SERVICES SECTION END
 
     // CONTACT SEC
     .contact-sec {
-        padding: 0rem 0rem 0;
+        padding: 2rem 0rem 0;
     }
+
     // CONTACT SEC
 
     // ABOUT US SEC
-    .about-sec{
+    .about-sec {
         padding: 3rem 0 0;
-        .info{
+
+        .info {
             margin-top: 0.5rem;
+
             p {
                 letter-spacing: 0.2px;
                 width: 100%;
                 font-size: 0.9rem;
             }
-        } 
-    } 
+        }
+    }
+
     // ABOUT US SEC
+    // PLANS
+    .plan-sec {
+        padding: 2.25rem 0 4rem;
+
+        h2 {
+            font-size: 1.9rem;
+        }
+
+        .package-card {
+            h2 {
+                font-size: 1.20rem;
+            }
+
+            ul {
+                li {
+                    h4 {
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+
+    // PLANS
+
+
+    //  Survey Form
+    .survey-form {
+        padding-top: 8rem;
+    }
+    .survey-form p {
+        margin-left: 0px;
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+    .survey-form .web-info {
+        text-align: left;
+    }
+    .survey-form .contact-info {
+        padding-top: 10px;
+    }
 }
 
-@media (max-width: 991.98px){
+@media (max-width: 991.98px) {
+
     // NAVBAR START
     .transparent-menu {
         background: $primary;
         padding: 5px 0px;
-        .logo{
+
+        .logo {
             width: 70px;
         }
-        #open-subscribe-form{
+
+        #open-subscribe-form {
             background-color: $white;
             color: $black;
             position: relative;
             top: 0px;
             margin-left: auto;
             margin-right: 1rem;
-            padding: 10px 15px;
+            padding: 10px 15px 8px 15px;
             font-size: 0.9rem;
             display: block;
         }
-        .navbar-toggler{
+
+        .navbar-toggler {
             padding: 7px;
             border: 1px solid $white;
             color: $white;
             background: $white;
             border-radius: 0px;
-            &:focus{
+
+            &:focus {
                 box-shadow: none;
             }
         }
-        .navbar-collapse{
-            .navbar-nav{
+
+        .navbar-collapse {
+            .navbar-nav {
                 li {
-                margin-left: 0.5rem;
-                margin-bottom: 5px;
-                .active {
-                    color: $black;
-                }
-                a{
-                    &:hover{
+                    margin-left: 0.5rem;
+                    margin-bottom: 5px;
+
+                    .active {
                         color: $black;
+                    }
+
+                    a {
+                        &:hover {
+                            color: $black;
+                        }
                     }
                 }
             }
+
+            .btn-light {
+                display: none !important;
+            }
         }
-        .btn-light{
-            display: none !important;
+
+        .member-btn {
+            margin-left: auto;
+            margin-right: 20px;
+            background-color: #fff;
+            color: #000;
         }
+
+        .member-btn {
+            display: block;
         }
     }
+
     // NAVBAR END
 
     // SLIDER START
-    .hero-section{
-        .carousel{
-            .carousel-item{
-                img{
-                    object-fit: cover;
+    .hero-section {
+        .carousel {
+            .carousel-item {
+                img {
+                    object-fit: fill;
                     height: 100vh;
+                    // display: none !important;
                 }
-                .carousel-caption{
+
+                .carousel-caption {
+                    // background: rgba(0, 161, 97, 0.6);
+                    // background: #00a16199;
                     h3 {
                         font-size: 3rem;
-                    } 
+                    }
+
                     h2 {
                         font-size: 2.5rem;
                     }
+
                     p {
                         font-size: 1rem;
                         width: 65%;
                     }
-                }  
-            }   
+                }
+            }
         }
-    } 
+    }
+
     // SLIDER END
 
     // SERVICES SECTION START
-    .services-sec{
-        #carouselservices{
+    .services-sec {
+        #carouselservices {
             .right-col {
                 left: 10px;
+                top: 40px;
+                padding-bottom: 50px;
             }
-        } 
-    } 
+        }
+    }
+
     // SERVICES SECTION END
 
     // ABOUT US SEC
-    .about-sec{
-        .info{
+    .about-sec {
+        .info {
             margin-top: 0.5rem;
+
             p {
                 letter-spacing: 0.2px;
                 width: 100%;
                 font-size: 0.9rem;
             }
-        } 
-    } 
+        }
+    }
+
     // ABOUT US SEC
+    // PLANS
+    .plan-sec {
+        padding: 2.25rem 0 4rem;
+
+        h2 {
+            font-size: 1.9rem;
+        }
+
+        .package-card {
+            h2 {
+                font-size: 1.20rem;
+            }
+
+            ul {
+                li {
+                    h4 {
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+
+    // PLANS
+
+    // Modal
+    .get-quote {
+        form {
+            h3 {
+                font-size: 1.2rem;
+
+                .input-field {
+                    label {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+
+    .get-quote {
+        form {
+            label {
+                font-size: 14px;
+            }
+        }
+    }
+
+    // Modal
 }
-@media (max-width: 767.98px){
+
+@media (max-width: 767.98px) {
+
+    .container-md,
+    .container-sm,
+    .container {
+        max-width: 850px;
+    }
+
     // NAVBAR START
     .transparent-menu {
-         .logo{
+        .logo {
             width: 60px;
         }
-        .navbar-collapse{
-            .navbar-nav{
+
+        .navbar-collapse {
+            .navbar-nav {
                 li {
                     margin-left: 0.5rem;
+
                     .active {
                         color: $black;
                     }
                 }
-            } 
+            }
         }
     }
+
     // NAVBAR END
 
     // SLIDER START
-    .hero-section{
-        .carousel{
-            .carousel-item{
-                height: 100vh;
-                img{
+    .hero-section {
+        .carousel {
+            .carousel-item {
+                height: 80vh;
+
+                img {
                     object-fit: cover;
-                    height: 100vh;
+                    height: 80vh;
                 }
-                .carousel-caption{
-                    height: 100vh;
+
+                .carousel-caption {
+                    height: 80vh;
                     h3 {
-                        font-size: 2.5rem;
-                    } 
-                    h2 {
-                        font-size: 2rem;
+                        font-size: 2.2rem;
+                        width: 80%;
                     }
+
+                    h2 {
+                        font-size: 1.90rem;
+                    }
+
                     p {
                         font-size: 1rem;
                         width: 95%;
                     }
-                }  
-            }   
+                }
+            }
         }
-    } 
+    }
+
     // SLIDER END
 
     // SERVICES SECTION START
-    .services-sec{
-        padding: 2rem 0 2rem;
-        #carouselservices{
-            .right-col {
-                left: 10px;
+    .services-sec {
+        padding: 2rem 0 4.5rem;
+        h2{
+            font-size: 2rem;
+        }
+        .border-underline{
+            span {
+                width: 70px;
             }
         } 
-    } 
+        #carouselservices {
+            .right-col {
+                left: 10px;
+                top: 40px;
+            }
+            .left-col{
+                img {
+                    height: auto;
+                }
+            } 
+        }
+    }
+
     // SERVICES SECTION END
 
     // ABOUTUS START
     .about-sec {
         padding: 2rem 0 0;
-        .right-img{
+
+        .right-img {
             margin-top: 2rem;
         }
+        h2{
+            font-size: 2rem;
+        }
+        .border-underline{
+            span {
+                width: 55px;
+            }
+        } 
     }
+
     // ABOUTUS END
+
+    // PLANS
+    .plan-sec {
+        padding: 2.25rem 0 4rem;
+
+        h2{
+            font-size: 2rem;
+        }
+
+        .package-card {
+            h2 {
+                font-size: 1.55rem;
+            }
+        }
+    }
+    // PLANS
+    // TEAMS
+    .team-sec{
+        h2 {
+            font-size: 2rem;
+        }
+        .border-underline{
+            span {
+                width: 70px;
+            }
+        } 
+    } 
+    // TEAMS
+    // Contact sec
+    .contact-sec {
+        h2{
+            font-size: 2rem;
+        }
+    }
 }

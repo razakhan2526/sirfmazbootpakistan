@@ -1,0 +1,104 @@
+@use "../abstracts/variables" as *;
+.survey-form {
+    padding-top: 2rem;
+    max-width: 1140px;
+    margin: auto;
+}
+.survey-form .logo{
+    width: 120px;
+    height: auto;
+    object-fit: contain;
+    margin: auto;
+    display: block;
+    margin-bottom: 20px;
+}
+.survey-form h1{
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.survey-form label{
+    color: $black;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+    text-decoration: none;
+}
+.survey-form .form-control{
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid $black;
+    background-color: transparent;
+    margin-bottom: 50px;
+    border-radius: 0px;
+}
+.survey-form .form-control:focus{
+    border: 0px;
+    outline: none;
+    box-shadow: none;
+    border-bottom: 1px solid $primary;
+}
+
+.survey-form p{
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+    color: $black;
+    margin-top: 30px;
+}
+.survey-form .form-check .form-check-label a{
+    font-size: 16px;
+    font-weight: 700;
+    color: $primary;
+}
+.survey-form .form-check input{
+    border-radius: 0px;
+    width: 15px;
+    height: 15px;
+    border: 1px solid $black;
+    color: $primary;
+}
+.form-check-input:checked{
+    background-color: $primary;
+}
+.survey-form .form-check input:focus{
+    box-shadow: none;
+}
+.survey-form .btn-primary{
+    background-color: $primary;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    border-radius: 50px;
+    width: 120px;
+    height: 45px;
+    border: 0px;
+    margin: auto;
+    display: block;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+.survey-form .btn-primary:hover{
+    background-color: $black;
+    transition: 0.3s;
+}
+.survey-form .contact-info{
+    padding-top: 50px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.survey-form .web-info{
+    text-align: right;
+}
+.survey-form .contact-info a{
+    color: $primary;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+    text-decoration: none;
+}
